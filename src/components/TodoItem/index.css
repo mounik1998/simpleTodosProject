@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.list-alignment {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  .delete-button {
+    width: 50px;
+  }
+}
+
+.delete-button {
+  height: 40px;
+  width: 100px;
+  border-style: solid;
+  border-color: red;
+  border-radius: 7px;
+  background-color: white;
+  color: red;
+}

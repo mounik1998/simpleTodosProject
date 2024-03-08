@@ -1,0 +1,10 @@
+/* Write your CSS here */
+.inner-container {
+  padding: 10%;
+  background-color: white;
+}
+
+.outer-container {
+  background-color: #ffc2a0;
+  padding: 50px;
+}
