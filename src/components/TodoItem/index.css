@@ -21,3 +21,25 @@
   background-color: white;
   color: red;
 }
+
+.todo-buttons-alignment {
+  display: flex;
+  align-items: center;
+}
+
+.todo-buttons {
+  margin: 5px;
+}
+
+.checkbox-todo-aligment {
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.not-completed {
+  text-decoration: none;
+}

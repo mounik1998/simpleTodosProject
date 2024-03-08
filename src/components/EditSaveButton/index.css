@@ -1,0 +1,13 @@
+.edit-save-button {
+  height: 40px;
+  width: 100px;
+  border-style: solid;
+  border-color: red;
+  border-radius: 7px;
+  background-color: white;
+  color: red;
+}
+
+.edit-save-button-alignment {
+  text-align: end;
+}

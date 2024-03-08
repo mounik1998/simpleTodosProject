@@ -1,5 +1,7 @@
 import {Component} from 'react'
+import {v4 as uuid} from 'uuid'
 import TodoItem from '../TodoItem'
+import AddTodo from '../AddTodo'
 import './index.css'
 
 const initialTodosList = [
@@ -50,12 +52,24 @@ class SimpleTodos extends Component {
     this.setState({todoList: updatedTodoList})
   }
 
+  addNewTodo = todo => {
+    const {todoList} = this.state
+    const newTodo = {id: uuid(), title: todo}
+    const todoCheckAlreadyExists = todoList.filter(item => item.title === todo)
+    if (todoCheckAlreadyExists.length === 0) {
+      const newTodoList = [...todoList, newTodo]
+      console.log(newTodoList)
+      this.setState({todoList: newTodoList})
+    }
+  }
+
   render() {
     const {todoList} = this.state
 
     return (
       <div className="outer-container">
         <div className="inner-container">
+          <AddTodo addNewTodo={this.addNewTodo} />
           <h1>Simple Todos</h1>
           <ul>
             {todoList.map(item => (

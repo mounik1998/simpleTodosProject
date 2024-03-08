@@ -1,0 +1,20 @@
+.add-todo-text-container {
+  text-align: center;
+}
+
+.input-text-element {
+  color: black;
+  height: 40px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.add-button {
+  height: 40px;
+  width: 100px;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+}
